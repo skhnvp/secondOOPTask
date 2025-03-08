@@ -17,12 +17,7 @@ public class Line {
     public double getLength() {
         int deltaX = p2.getX() - p1.getX();
         int deltaY = p2.getY() - p1.getY();
-        return  (
-                (double)
-                ((int)
-                        (Math.sqrt(deltaX * deltaX + deltaY * deltaY) * 100)
-                )
-        )/100;
+        return  (Math.round(Math.sqrt(deltaX * deltaX + deltaY * deltaY) * 100)) / 100.;
     }
 
     @Override
